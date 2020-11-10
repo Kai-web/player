@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入字体图标 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <!-- 引入外部样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <title>JS自定义视频播放器</title>
+</head>
+
+<body>
+    <h1>JS自定义视频播放器</h1>
+    <video src="videos/Marvel-Comics.mp4" id="video" class="screen" poster="image/漫威电影十周年合照.jpg"></video>
+    <div class="controls">
+        <!-- 播放按钮 -->
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <!-- 暂停按钮 -->
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+        <!-- 进度条 -->
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <!-- 时间戳 -->
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <h2>视频来源：<a href="https://www.bilibili.com/video/BV1m4411b7hZ" target="_blank">B站轩龙鸽鸽</a></h2>
+    <script src="script.js"></script>
+</body>
+
+</html>
